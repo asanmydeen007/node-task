@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+      integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+      crossorigin="anonymous"
+    />
+    <title>Profile</title>
+    <style>
+      a {
+        text-decoration: none;
+      }
+      .profile {
+        text-align: center;
+        max-width: 250px;
+        padding: 20px;
+        box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+        align-items: center;
+        align-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        display: block;
+      }
+      img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin: 0 auto 20px auto;
+        display: block;
+      }
+      .__heading {
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+      .last {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="<%= user.picture %>" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div> -->
+    <!-- <button onclick="signOut();">Sign out</button> -->
+
+    <div class="profile">
+      <img src="<%= user.picture %>" alt="profile" />
+      <h4 class="heading__"><%= user.name %></h4>
+      <a href="/logout" class="btn btn-secondary btn-lg">Sign out</a>
+      <a class="add__user btn btn-primary btn-lg last" href="/"
+        >Add User to Company</a
+      >
+    </div>
+  </body>
+</html>
