@@ -102,6 +102,6 @@ function checkAuthenticated(req, res, next){
     })
 
 }
-let user___email =[];
-console.log(user___email)
+
+
 app.listen(PORT, ()=> { console.log(`Server is running on http://localhost:${PORT}`)});
